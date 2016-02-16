@@ -1,0 +1,60 @@
+{
+  "name": "react-components-markdown",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "kotatsu serve --port 4000 --config ./config/loaders.js --presets es2015,stage-0,react,react-hmre ./example/Main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/istarkov/react-components-markdown.git"
+  },
+  "author": "istarkov https://github.com/istarkov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/istarkov/react-components-markdown/issues"
+  },
+  "homepage": "https://github.com/istarkov/react-components-markdown#readme",
+  "peerDependencies": {
+    "react": "^0.14"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.3.1",
+    "babel-cli": "^6.4.5",
+    "babel-eslint": "^4.1.8",
+    "babel-polyfill": "^6.5.0",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-react": "^6.3.13",
+    "babel-preset-react-hmre": "^1.0.1",
+    "babel-preset-stage-0": "^6.3.13",
+    "classnames": "^2.2.3",
+    "core-js": "^2.1.0",
+    "css-loader": "^0.23.1",
+    "eslint": "^1.10.3",
+    "eslint-config-airbnb": "^4.0.0",
+    "eslint-plugin-react": "^3.16.1",
+    "file-loader": "^0.8.5",
+    "github-markdown-css": "^2.2.1",
+    "kotatsu": "^0.10.0",
+    "node-sass": "^3.4.2",
+    "normalize.css": "^3.0.3",
+    "postcss-loader": "^0.8.0",
+    "raw-loader": "^0.5.1",
+    "react": "^0.14.7",
+    "react-dom": "^0.14.7",
+    "react-motion": "^0.4.2",
+    "rimraf": "^2.5.1",
+    "sass-loader": "^3.1.2",
+    "style-loader": "^0.13.0",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.12.13"
+  },
+  "dependencies": {
+    "highlight.js": "^9.1.0",
+    "lodash": "^4.3.0",
+    "markdown-it": "^5.1.0",
+    "recompose": "^0.14.5"
+  }
+}
