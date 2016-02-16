@@ -98,7 +98,6 @@ const styles = {...githubCss, ...hlJsCss};
 If you are not using css-modules, just include css from this project
 
 
-
 ## Use this project as boilerplate for hot reloadable libraries with documentation
 
 ```bash

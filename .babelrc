@@ -1,0 +1,10 @@
+{
+  "presets": ["es2015", "react", "stage-0"],
+  "env": {
+    "LIB": {
+      "plugins": [
+        ["webpack-loaders", {"config": "./config/lib.webpack.config.js"}]
+      ]
+    }
+  }
+}

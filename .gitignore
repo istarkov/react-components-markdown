@@ -1,5 +1,6 @@
 /node_modules
 _*
+/lib
 /dist
 /build/*
 !/build/index.html

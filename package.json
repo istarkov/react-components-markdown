@@ -2,10 +2,14 @@
   "name": "react-components-markdown",
   "version": "0.1.0",
   "description": "",
-  "main": "index.js",
+  "main": "/lib/index.js",
   "scripts": {
     "start": "kotatsu serve --port 4000 --config ./config/loaders.js --presets es2015,stage-0,react,react-hmre ./example/Main.js",
-    "build": "NODE_ENV=production kotatsu build client --minify --config ./config/loaders.js --presets es2015,stage-0,react ./example/Main.js -o build",
+    "example-build": "NODE_ENV=production kotatsu build client --minify --config ./config/loaders.js --presets es2015,stage-0,react ./example/Main.js -o build",
+    "concat-css": "rimraf ./lib/markdown.css && cat ./lib/*.css > ./lib/markdown.css",
+    "build-lib": "NODE_ENV=LIB babel ./src --out-dir lib",
+    "build": "rimraf ./lib && npm run build-lib && npm run concat-css",
+    "prepublish": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -25,6 +29,7 @@
     "autoprefixer": "^6.3.1",
     "babel-cli": "^6.4.5",
     "babel-eslint": "^4.1.8",
+    "babel-plugin-webpack-loaders": "^0.3.5",
     "babel-polyfill": "^6.5.0",
     "babel-preset-es2015": "^6.3.13",
     "babel-preset-react": "^6.3.13",
@@ -36,6 +41,7 @@
     "eslint": "^1.10.3",
     "eslint-config-airbnb": "^4.0.0",
     "eslint-plugin-react": "^3.16.1",
+    "extract-text-webpack-plugin": "^1.0.1",
     "file-loader": "^0.8.5",
     "github-markdown-css": "^2.2.1",
     "kotatsu": "^0.10.0",
