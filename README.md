@@ -65,7 +65,6 @@ Or just
 
 [My super example 2, click to view](http://istarkov.github.io/html-hint/#exampleSecondary)
 
-Example source
 
 ## Styling
 
@@ -97,6 +96,10 @@ const styles = {...githubCss, ...hlJsCss};
 
 If you are not using css-modules, just include css from this project
 
+`react-components-markdown/lib/markdown.css`
+
+(_all classes are hashed like `.github-markdown__markdown-body__b21c5` so
+will not pollute your styles_)
 
 ## Use this project as boilerplate for hot reloadable libraries with documentation
 
