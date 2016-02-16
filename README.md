@@ -4,6 +4,18 @@ React component to render markdown with React components inside
 
 ## Example
 
+This library allow to create interactive documentation from md files.
+
+i.e. this [html-hint README.md](https://github.com/istarkov/html-hint/blob/master/README.md)
+
+become this [html-hint README with examples](http://istarkov.github.io/html-hint/)
+
+in just few lines of [React code](https://github.com/istarkov/html-hint/blob/master/example/components/Page.js#L15-L32)
+
+(_this library github.io example is also build with this library_)
+
+## How to
+
 Create `readme.md` for your component
 
 ```md
@@ -55,7 +67,7 @@ You can use SuperComponent with children
   </SuperComponent> )
 ```
 
-[My super example, click to view](http://istarkov.github.io/html-hint/#exampleMain)
+[My super example, click to view](http://istarkov.github.io/react-components-markdown/#exampleMain)
 
 Or just
 
@@ -63,7 +75,7 @@ Or just
 ( <SuperComponent /> )
 ```
 
-[My super example 2, click to view](http://istarkov.github.io/html-hint/#exampleSecondary)
+[My super example 2, click to view](http://istarkov.github.io/react-components-markdown/#exampleSecondary)
 
 
 ## Styling
