@@ -7,12 +7,12 @@ import pure from 'recompose/pure';
 import parsemd from './utils/parsemd';
 import MarkdownPart from './MarkdownPart';
 
-export const markdownIt = ({ mdAndComps, wrap }) => (
+export const markdownIt = ({ mdAndComps, wrap, styles }) => (
   <div>
     {
       mdAndComps
       .map(({ md, component, componentKey }) => ([
-        md && <MarkdownPart>{md}</MarkdownPart>,
+        md && <MarkdownPart styles={styles}>{md}</MarkdownPart>,
         wrap({ component, componentKey }),
       ]))
     }
