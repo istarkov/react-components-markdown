@@ -10,7 +10,7 @@
     "build-lib": "BABEL_DISABLE_CACHE=1 NODE_ENV=LIB babel ./src --out-dir lib",
     "build": "rimraf ./lib && npm run build-lib && npm run concat-css",
     "prepublish": "npm run build",
-    "lint": "eslint ./src",
+    "lint": "eslint ./src ./example",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

@@ -6,4 +6,4 @@ import App from './components/App';
 
 const mountNode = document.getElementById('app');
 
-render(<App/>, mountNode);
+render(<App />, mountNode);
