@@ -44,7 +44,6 @@
     "eslint-plugin-react": "^4.0.0",
     "extract-text-webpack-plugin": "^1.0.1",
     "file-loader": "^0.8.5",
-    "fsevents": "^1.0.8",
     "github-markdown-css": "^2.2.1",
     "kotatsu": "^0.12.1",
     "node-sass": "^3.4.2",
@@ -65,5 +64,8 @@
     "lodash": "^4.3.0",
     "markdown-it": "^6.0.0",
     "recompose": "^0.15.0"
+  },
+  "optionalDependencies": {
+    "fsevents": "^1.0.8"
   }
 }
