@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/istarkov/react-components-markdown.svg?branch=master)](https://travis-ci.org/istarkov/react-components-markdown)
+
 # React Components Markdown
 
 React component to render markdown with React components inside
