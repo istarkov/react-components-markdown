@@ -31,7 +31,7 @@ module.exports = {
           'style-loader',
           'css-loader?modules&importLoaders=2&localIdentName=[name]__[local]__[hash:5]',
           'postcss-loader',
-          `sass-loader?precision=10&indentedSyntax=sass`,
+          'sass-loader?precision=10&indentedSyntax=sass',
         ],
       },
       {

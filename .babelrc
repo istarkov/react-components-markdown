@@ -5,6 +5,11 @@
       "plugins": [
         ["webpack-loaders", {"config": "./config/lib.webpack.config.js"}]
       ]
+    },
+    "TESTS": {
+      "plugins": [
+        ["webpack-loaders", {"config": "./config/tests.webpack.config.js", "verbose": false}]
+      ]
     }
   }
 }
