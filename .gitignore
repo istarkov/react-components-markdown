@@ -1,5 +1,4 @@
 /node_modules
-_*
 /lib
 /dist
 /build/*
