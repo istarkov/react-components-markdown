@@ -1,17 +1,16 @@
-var path = require('path'); // eslint-disable-line no-var
-var autoprefixer = require('autoprefixer'); // eslint-disable-line no-var
+import path from 'path';
+import autoprefixer from 'autoprefixer';
 
-var alias = {  // eslint-disable-line no-var
+const alias = {
   'react-components-markdown': path.join(__dirname, '../src'),
 };
 
-module.exports = {
+export default {
   output: {
     libraryTarget: 'commonjs2',
-    // path: path.join(__dirname, '../lib'),
   },
   resolve: {
-    alias: alias, // eslint-disable-line
+    alias,
   },
   postcss: [
     autoprefixer({ browsers: ['last 2 versions'] }),

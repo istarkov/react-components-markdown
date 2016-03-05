@@ -8,7 +8,7 @@
     },
     "TESTS": {
       "plugins": [
-        ["webpack-loaders", {"config": "./config/tests.webpack.config.js", "verbose": false}]
+        ["webpack-loaders", {"config": "./config/tests.webpack.config.babel.js", "verbose": false}]
       ]
     }
   }
