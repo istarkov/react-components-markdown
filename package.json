@@ -68,7 +68,7 @@
   },
   "dependencies": {
     "highlight.js": "^9.1.0",
-    "lodash": "^4.3.0",
+    "lodash": "^4.16.5",
     "markdown-it": "^6.0.0",
     "recompose": "^0.15.0"
   },
