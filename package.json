@@ -69,7 +69,7 @@
   "dependencies": {
     "highlight.js": "^9.1.0",
     "lodash": "^4.3.0",
-    "markdown-it": "^6.0.0",
+    "markdown-it": "^8.3.0",
     "recompose": "^0.15.0"
   },
   "optionalDependencies": {
