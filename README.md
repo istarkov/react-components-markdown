@@ -1,5 +1,9 @@
 [![Build Status](https://travis-ci.org/istarkov/react-components-markdown.svg?branch=master)](https://travis-ci.org/istarkov/react-components-markdown)
 
+# Notice
+
+This library is highly outdated, IMO [markdown-in-js](https://github.com/threepointone/markdown-in-js) is much more better, please use it.
+
 # React Components Markdown
 
 React component to render markdown with React components inside
