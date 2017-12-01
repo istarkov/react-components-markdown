@@ -11,8 +11,8 @@ export const markdownIt = ({ mdAndComps, wrap, styles }) => (
   <div>
     {
       mdAndComps
-      .map(({ md, component, componentKey }) => ([
-        md && <MarkdownPart styles={styles}>{md}</MarkdownPart>,
+      .map(({ md, component, componentKey }, index) => ([
+        md && <MarkdownPart key={`md-${index}`} styles={styles}>{md}</MarkdownPart>,
         wrap({ component, componentKey }),
       ]))
     }
@@ -27,8 +27,15 @@ export const markdownItHOC = compose(
   mapPropsOnChange(
     ['anchorOffset'],
     ({ anchorOffset }) => ({
-      wrap: ({ component, componentKey }) => (
-        [
+      wrap: ({ component, componentKey }) => {
+        let newComponent;
+        if (component) {
+          newComponent = {
+            ...component,
+            key: `component-${componentKey ? `${componentKey}-` : ''}key`,
+          };
+        }
+        return ([
           <a
             style={{
               display: 'block',
@@ -37,10 +44,11 @@ export const markdownItHOC = compose(
               visibility: 'hidden',
             }}
             name={componentKey}
+            key={`anchor-${componentKey ? `${componentKey}-` : ''}key`}
           />,
-          component,
-        ]
-      ),
+          newComponent,
+        ]);
+      },
     })
   ),
   mapPropsOnChange(
