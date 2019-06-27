@@ -41,7 +41,7 @@
     "classnames": "^2.2.3",
     "core-js": "^2.1.0",
     "css-loader": "^0.23.1",
-    "enzyme": "^2.0.0",
+    "enzyme": "^2.8.1",
     "eslint": "^2.4.0",
     "eslint-config-airbnb": "^6.2.0",
     "eslint-plugin-react": "^5.0.0",
