@@ -64,7 +64,7 @@
     "sass-loader": "^4.0.0",
     "style-loader": "^0.13.0",
     "url-loader": "^0.5.7",
-    "webpack": "^1.12.13"
+    "webpack": "^2.3.3"
   },
   "dependencies": {
     "highlight.js": "^9.1.0",
